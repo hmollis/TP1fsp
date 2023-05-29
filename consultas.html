@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor Dreamers</title>
+    <link rel="stylesheet" href="./css/home14.css">
+    <!-- <link rel="stylesheet" href="./api_f1/api_f1.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/Logos/Logo03c.ico">
+</head>
+
+<body style="background-color: white;">
+    <div class="logo"><img src="./img/Logos/Logo03b.png" alt="Logo">MOTOR DREAMERS</div>
+    <div class="grid-contenedor-1 grid-contenedor-3 grid-contenedor-4">
+        <div class="menuPrincipal"><img src="./img/Bandera a Cuadros - r02.png" alt="Bandera a Cuadros">
+            <header>
+                <nav>
+                    <div class="contboton">
+                        <!-- <button class="boton" href="home03.html" target="_blank">Home</button> -->
+                        <a class="boton" href="index.html" target="_blank">Home</a>
+                    </div>
+                    <div class="contboton">
+                        <!-- <button class="boton" href="historia.html" target="_blank">Historia</button> -->
+                        <a class="boton" href="api_f1.html" target="_blank">API F1</a>
+                    </div>
+                    <div class="contboton">
+                        <!-- <button class="boton" src="./sucursales.html" target="_blank">Sucursales</button> -->
+                        <a class="boton" href="fabricantes.html" target="_blank">Fabricantes</a>
+                    </div>
+                    <div class="contboton">
+                        <a class="boton" href="#contacto">Contacto</a>
+                    </div>
+                    <div class="contboton">
+                        <a class="boton" href="consultas.html" target="_self">Consultas</a>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <div class="formulario" style="border-color: white;">
+            <h3>Formulario de consultas</h3>
+            <hr>
+            <!-- <form action="show-data.html" target="_blank"> -->
+            <form id="formulario">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <div>
+                        <label for="nombre"> Nombre:</label>
+                        <input type="text" id="nombre" name="nombre">
+                        <span id="nombreError" class="error"></span>
+                    </div>
+                    <div>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email">
+                        <span id="emailError" class="error"></span>
+                    </div>
+                    <div>
+                        <label for="edad">Edad:</label>
+                        <input type="numero" id="edad" name="edad">
+                        <span id="edadError" class="error"></span>
+                    </div>
+                </fieldset>
+                <br>
+                <label for="comentarios">Comentarios:</label> <textarea name="comentarios" rows="10"
+                    cols="90"></textarea>
+                <br><br>
+                <button type="button" onclick="validacion()"> Enviar </button>
+                <button type="reset">Reset</button>
+                <script src="./js/validacion.js"></script>
+            </form>
+        </div>
+        <div class="pieDePagina" id="contacto">
+            <nav>
+                <a href="https://api.whatsapp.com/send?phone=11111199999" target="_blank"><img
+                        src="./img/iconoWhatsapp.png" alt="Whatsapp" width="30"></a>
+                <a href="mailto:motordreamers@gmail.com?subject=Contacto" target="_blank"><img src="./img/Email.png"
+                        alt="Email" width="30"></a>
+                <a href="https://www.facebook.com/ScuderiaFerrari/" target="_blank"><img src="./img/Facebook.png"
+                        alt="Facebook" width="30"></a>
+                <a href="https://www.instagram.com/scuderiaferrari/?hl=es" target="_blank"><img
+                        src="./img/instagram.jpg" alt="Instagram" width="60"></a>
+                <a href="https://twitter.com/ScuderiaFerrari?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                    target="_blank"><img src="./img/twiter.png" alt="Twiter" width="30"></a>
+            </nav>
+        </div>
+    </div>
+    <!-- <script src="./js/validacion.js"></script> -->
+</body>
+
+</html>

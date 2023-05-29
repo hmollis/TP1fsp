@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor Dreamers</title>
+    <link rel="stylesheet" href="./css/home14.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/Logos/Logo03c.ico">
+</head>
+<body style="background-color: white;">
+    <div class="logo"><img src="./img/Logos/Logo03b.png" alt="Logo">MOTOR DREAMERS</div>
+    <div class="grid-contenedor-1 grid-contenedor-2 grid-contenedor-3">
+        <div class="menuPrincipal"><img src="./img/Bandera a Cuadros - r02.png" alt="Bandera a Cuadros">
+            <header>
+                <nav>
+                    <div class="contboton">
+                        <!-- <button class="boton" href="home03.html" target="_blank">Home</button> -->
+                        <a class="boton" href="index.html" target="_self">Home</a>
+                    </div>
+                    <div class="contboton">
+                        <!-- <button class="boton" href="historia.html" target="_blank">Historia</button> -->
+                        <a class="boton" href="api_f1.html" target="_blank">API F1</a>
+                    </div>
+                    <div class="contboton">
+                        <!-- <button class="boton" src="./sucursales.html" target="_blank">Sucursales</button> -->
+                        <a class="boton" href="fabricantes.html" target="_blank">Fabricantes</a>
+                    </div>
+                    <div class="contboton">
+                        <a class="boton" href="#contacto">Contacto</a>
+                    </div>
+                    <div class="contboton">
+                        <a class="boton" href="consultas.html" target="_blank">Consultas</a>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <div class="menuLateral">
+            <h4 style="text-align: center; font-style: italic;">Configuraciones</h4>
+        </div>
+        <div class="contenido">
+            <!-- <div class="con-velo" onclick="adminContenido('con-velo')">
+                <div class="fotoVelo"><img src="./img/Lamborguini/Lamborguini_Gris_L.jpg" alt="Lamborguini"><h4>VELOCIDAD</h4></div> -->
+            <div class="con-velo">
+                <div class="fotoVelo" onclick="adminContenido('con-velo')"><img src="./img/Lamborguini/Lamborguini_Gris_L.jpg" alt="Lamborguini"><h4>VELOCIDAD</h4></div>
+                <div class="textVelo">
+                    <table id="tabla">
+                        <tr><th>Marca: </th><td>Lamborguini</td></tr>
+                        <tr><th>Modelo: </th><td>Aventador</td></tr>
+                        <tr><th>Año: </th><td>2022</td></tr>
+                        <tr><th>Velocidad Máxima: </th><td>350 km/h</td></tr>
+                        <tr><th>Aceleración 0-100 km/h: </th><td>2.5 seg</td></tr>
+                        <tr><th>Motor: </th><td>Combustión V12</td></tr>
+                        <tr id="btnConfig"><th colspan="2" style="text-align: center;"><div class="contboton"  id="botonConfig">
+                            <a class="boton" onclick="completarConfig('textVelo')" style="font-size: 20px;">Completar configuración</a>
+                        </div></th></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="con-acel">
+                <div class="fotoAcel" onclick="adminContenido('con-acel')"><img src="./img/Ferrari/Ferrari_1.jpg" alt="Ferrari"><h4>ACELERACIÓN</h4></div>
+                <div class="textAcel">
+                    <table>
+                        <tr><th>Marca: </th><td>Ferrari</td></tr>
+                        <tr><th>Modelo: </th><td>La Ferrari</td></tr>
+                        <tr><th>Año: </th><td>2022</td></tr>
+                        <tr><th>Velocidad Máxima: </th><td>340 km/h</td></tr>
+                        <tr><th>Aceleración 0-100 km/h: </th><td>2.0 seg</td></tr>
+                        <tr><th>Motor: </th><td>Combustión V12</td></tr>
+                        <tr id="btnConfig"><th colspan="2" style="text-align: center;"><div class="contboton"  id="botonConfig">
+                            <a class="boton" onclick="completarConfig('textAcel')" style="font-size: 20px;">Completar configuración</a>
+                        </div></th></tr>
+                    </table>                    
+                </div>
+            </div>
+            <div class="con-hibr">
+                <div class="fotoHibr" onclick="adminContenido('con-hibr')"><img src="./img/Porsche/Porsche_2_L.jpg" alt="Porsche"><h4>HÍBRIDO</h4></div>
+                <div class="textHibr">
+                    <table>
+                        <tr><th>Marca: </th><td>Porsche</td></tr>
+                        <tr><th>Modelo: </th><td>918</td></tr>
+                        <tr><th>Año: </th><td>2022</td></tr>
+                        <tr><th>Velocidad Máxima: </th><td>330 km/h</td></tr>
+                        <tr><th>Aceleración 0-100 km/h: </th><td>2.7 seg</td></tr>
+                        <tr><th>Motor: </th><td>Combustión V12 + Eléctrico 350 kW</td></tr>
+                        <tr id="btnConfig"><th colspan="2" style="text-align: center;"><div class="contboton"  id="botonConfig">
+                            <a class="boton" onclick="completarConfig('textHibr')" style="font-size: 20px;">Completar configuración</a>
+                        </div></th></tr>
+                    </table>                    
+                </div>
+            </div>            
+            <div class="con-elec">
+                <div class="fotoElec" onclick="adminContenido('con-elec')"><img src="./img/Tesla/Tesla_1_L.jpg" alt="Tesla"><h4>ELÉCTRICO</h4></div>
+                <div class="textElec">
+                    <table>
+                        <tr><th>Marca: </th><td>Tesla</td></tr>
+                        <tr><th>Modelo: </th><td>Model S</td></tr>
+                        <tr><th>Año: </th><td>2022</td></tr>
+                        <tr><th>Velocidad Máxima: </th><td>300 km/h</td></tr>
+                        <tr><th>Aceleración 0-100 km/h: </th><td>3.0 seg</td></tr>
+                        <tr><th>Motor: </th><td>Eléctrico 350 kW</td></tr>
+                        <tr id="btnConfig"><th colspan="2" style="text-align: center;"><div class="contboton"  id="botonConfig">
+                            <a class="boton" onclick="completarConfig('textElec')" style="font-size: 20px;">Completar configuración</a>
+                        </div></th></tr>
+                    </table>                    
+                </div>
+            </div>
+            <div class="colores">
+                <div class="cuadroAzul" onclick="colorElegido('cuadroAzul')" style="background-color: blue; margin: auto;"></div>
+                <div class="cuadroRojo" onclick="colorElegido('cuadroRojo')" style="background-color: red; margin: auto;"></div>
+                <div class="cuadroVioleta" onclick="colorElegido('cuadroVioleta')" style="background-color: blueviolet; margin: auto;"></div>
+            </div>
+            <div class="menuOpcionales">
+                <table id="opcionales">
+                    <tr><th>Color Carrocería</th><td><div id="colorCarroceria" onclick="elegirColor()" style="border-style: solid; border-color: red; border-radius: 5px; font-size: 15px; text-align: center; align-content: center; margin: auto;">Click colores</div></td></tr>
+                    <tr><th>Caja de Cambios</th><td><div >Manual / Automática</div></td></tr>
+                    <tr id="btnGuardar"><th colspan="2" style="text-align: center;"><div class="contboton">
+                        <a class="boton" onclick="guardar()" style="font-size: 20px;">Guardar</a>
+                    </div></th></tr><br>
+                </table>
+            </div>
+        </div>
+        <div class="pieDePagina" id="contacto">
+            <nav>
+            <a href="https://api.whatsapp.com/send?phone=11111199999" target="_blank"><img src="./img/iconoWhatsapp.png" alt="Whatsapp" width="30"></a>
+            <a href="mailto:motordreamers@gmail.com?subject=Contacto" target="_blank"><img src="./img/Email.png" alt="Email" width="30"></a>
+            <a href="https://www.facebook.com/ScuderiaFerrari/" target="_blank"><img src="./img/Facebook.png" alt="Facebook" width="30"></a>
+            <a href="https://www.instagram.com/scuderiaferrari/?hl=es" target="_blank"><img src="./img/instagram.jpg" alt="Instagram" width="60"></a>
+            <a href="https://twitter.com/ScuderiaFerrari?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="./img/twiter.png" alt="Twiter" width="30"></a>
+            </nav>            
+        </div>
+    </div>
+    <script src="./js/home14.js"></script>   
+</body>
+</html>
